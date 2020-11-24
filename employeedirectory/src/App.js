@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Wrapper from "./components/Wrapper";
+import Employees from "./employees.json";
+import EmployeeList from "./components/EmployeeList";
+import Title from "./components/Title";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Wrapper>
+     <Title>Employee Directory</Title>
+     {Employees.map(employee => (
+       <EmployeeList
+          firstName={employee.firstName}
+          lastName={employee.lastName}
+          email={employee.email}
+          phone={employee.phone}
+          occupation={employee.occupation}
+          residence={employee.residence}
+        />
+      ))}
+   </Wrapper>
   );
 }
 
