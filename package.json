@@ -1,7 +1,7 @@
 {
   "name": "homework15-employeeDirectory",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Description of the Project:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MarkBrazee/homework15-employeeDirectory/issues"
   },
-  "homepage": "https://github.com/MarkBrazee/homework15-employeeDirectory#readme"
+  "homepage": "https://github.com/MarkBrazee/homework15-employeeDirectory#readme",
+  "dependencies": {
+    "restore": "^0.3.0"
+  }
 }
