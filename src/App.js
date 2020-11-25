@@ -6,6 +6,13 @@ import Title from "./components/Title";
 import "./App.css";
 import Table from "./components/Table";
 
+// sortEmployee = (lastName) => {
+//   const employees = this.state.employees.sort(
+//     (employee) => employee.lastName === lastName
+//   );
+//   this.setState({ employees });
+// };
+
 // Map over this.state.friends and render a Employee component for each employee object
 function App() {
   return (
@@ -23,6 +30,7 @@ function App() {
           />
         ))}
       </Table>
+      {/* <span onClick={this.sortByName}>lastName</span>; */}
     </Wrapper>
   );
 }
